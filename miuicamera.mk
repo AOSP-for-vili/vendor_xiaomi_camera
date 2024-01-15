@@ -8,6 +8,10 @@
 PRODUCT_PACKAGES += \
     MiuiCameraOverlay
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    MiuiCamera
+
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/camera/configs/permissions/default-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions-miuicamera.xml \
