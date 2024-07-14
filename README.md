@@ -5,7 +5,7 @@ Prebuilt stock MIUI Camera to include in custom ROM builds.
 Extracted from renoir MIUI package (refer proprietary-files.txt for version).
 
 ### Supported devices
-* Xiaomi 11 Lite 5G (renoir)
+* Xiaomi 11T Pro (vili)
 
 ### How to use?
 
@@ -23,5 +23,5 @@ $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 ```
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.miui.notch=1 \
-    ro.product.mod_device=renoir_global
+    ro.product.mod_device=vili_global
 ```
