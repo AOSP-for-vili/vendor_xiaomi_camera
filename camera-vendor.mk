@@ -11,5 +11,5 @@ PRODUCT_PACKAGES += \
     libcamera_mianode_jni.xiaomi \
     libgui-xiaomi \
     libmicampostproc_client \
-    vendor.xiaomi.hardware.campostproc@1.0 \
+    vendor.xiaomi.hardware.campostproc@1.0-system \
     MiuiCamera
