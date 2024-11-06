@@ -60,6 +60,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
             ;;
+        system/lib64/libgui-xiaomi.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V4-ndk.so" "android.hardware.graphics.common-V5-ndk.so" "${2}"
+            ;;
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             [ "$2" = "" ] && return 0
             split --bytes=20M -d "${2}" "${2}".part
